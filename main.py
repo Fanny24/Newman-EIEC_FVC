@@ -38,7 +38,8 @@ if __name__ == "__main__":
         word_list = []
         with open(file_path, "r") as file:
             for line in file:
-                word_list.append(line.strip())
+                # Convertir cada palabra a mayúsculas
+                word_list.append(line.strip().upper())
     else:
         print(f"El fichero {filename} no existe")
         word_list = ["ravenclaw", "gryffindor", "slytherin", "hufflepuff"]
